@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>ecs blog</title>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./ECS.html">Ecs</a></li>
+                <li class="active"><a href="./PerlinNois.html">Perlin noise</a></li>
+                <li><a href="./PolyCollision.html">Poly collision</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Exploring the Beauty of Perlin Noise: A Symphony of Randomness and Order</h1>
+            <figure>
+                <img src="./assets/PerlinNoise.jpg" alt="een image die laat zien hoe perlin nois er uit ziet" />
+                <figcaption>dit is een image van perlin nois <a href="#" target="_blank">bron 👇</a> </figcaption>
+            </figure>
+            <p>
+                In the vast world of computer graphics, game development, and procedural generation, one mathematical marvel stands out for its ability to create natural-looking randomness with a touch of order – Perlin noise.
+                Developed by Ken Perlin in 1983, Perlin noise has become a cornerstone in the toolkit of programmers and artists alike.
+                This blog post delves into the fascinating world of Perlin noise, exploring its origins, applications, and the underlying magic that makes it a go-to solution for generating realistic textures, terrain, and more.
+            </p>
+
+            <h2>Understanding Perlin Noise:</h2>
+            <p>
+                At its core, Perlin noise is a gradient noise function that produces a smoothly varying random pattern.
+                Unlike purely random noise, Perlin noise introduces coherence and continuity, making it ideal for simulating natural phenomena such as terrain, clouds, and textures.
+                The algorithm generates a field of values at different points in space, and the smooth transitions between these values create a visually appealing, organic appearance.
+            </p>
+            <h2>The Perlin Noise Algorithm:</h2>
+            <p>
+                Ken Perlin's algorithm for generating Perlin noise involves a series of steps that blend gradients and interpolate values.
+                Here's a simplified breakdown:
+            </p>
+            <ol>
+                <li>Grid Creation: Divide the space into a grid of cells.</li>
+                <li>Gradient Vectors: Assign a random gradient vector to each corner of the grid cell.</li>
+                <li>Dot Products: Calculate the dot product between each gradient vector and the vector from the grid point to the cell corner.</li>
+                <li>Fade Function: Introduce a fade function to smooth out the transitions between grid points.</li>
+                <li>Interpolation: Interpolate the dot products using a smoother interpolation function.</li>
+                <li>Summation: Sum up the interpolated values to get the final Perlin noise value for the given point.</li>
+            </ol>
+
+            <h2>Applications of Perlin Noise:</h2>
+            <ul>
+                <li>Terrain Generation: Perlin noise is widely used in procedural terrain generation. By applying various octaves of Perlin noise, developers can create realistic and varied landscapes, from rolling hills to jagged mountain ranges.</li>
+                <li>Texture Synthesis: The ability of Perlin noise to smoothly transition between values makes it perfect for generating textures with organic patterns, such as marble, wood, or clouds.</li>
+                <li>Procedural Animation: Perlin noise is employed in procedural animation to simulate natural movements, like the flickering of flames or the swaying of trees.</li>
+                <li>Randomization with Coherence: In game development, Perlin noise is often used to add randomness to elements like foliage placement, while maintaining a sense of coherence and realism.</li>
+            </ul>
+
+            <h2>Conclusion:</h2>
+            <p>
+                Perlin noise is a remarkable tool that bridges the gap between chaos and order in computer graphics and simulation.
+                Its ability to create visually pleasing randomness has made it a staple in the toolkit of many developers and artists.
+                Whether you're crafting realistic terrains, designing procedural textures, or adding natural variability to animations, Perlin noise remains an indispensable ally in the pursuit of visually compelling and immersive digital environments.
+            </p>
+            <a class="top" href="#header">Top</a>
+        </article>
+    </main>
+    <footer>
+        <p>gemaakt door quinten duijster</p>
+    </footer>
+</body>
+</html>

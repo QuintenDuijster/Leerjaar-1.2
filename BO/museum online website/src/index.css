@@ -1,0 +1,323 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #1f1f1f;
+    color: white;
+    overflow-x: hidden;
+}
+.Faq {
+margin: 5vw; 
+}
+
+    .Faq p {
+        margin-bottom: 30px;
+    }
+    .Info details{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+main a {
+    color: #9f9f9f;
+    text-decoration: underline;
+}
+
+
+.Header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: #222222;
+    padding: 8px;
+}
+
+.Header * {
+    display: flex;
+}
+
+h1{ font-size: 200%; }
+
+h2{ font-size: 150%; }
+
+h3{ font-size: 125%; }
+
+ a,
+ p {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.Header nav ul li {
+    margin: 5px;
+    padding: 8px;
+}
+
+.Header img {
+    height: 35px;
+    width: auto;
+    margin: auto 10px auto 15px;
+}
+
+.Header nav a p {
+    margin: auto 25px auto 0px;
+}
+
+.Header button {
+    background-color: #222222;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #222222;
+    top: 50px;
+    margin-left: -12px;
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+}
+
+.Right{
+    margin-left: auto;
+}
+
+.Footer {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-color: #222222;
+}
+
+.Footer div {
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer div nav,
+.Footer div div{
+    display: flex;
+    flex-direction: row;
+}
+
+.Footer div ul {
+    width: 150px;
+    padding: 6px;
+    margin: 4px 60px;
+}
+
+.Footer > ul {
+    margin: auto 0px;
+}
+
+.Footer li{
+    list-style: none;
+}
+
+.lineHorizontal {
+    height: 3px;
+    background-color: white;
+}
+
+.lineVertical {
+    margin-right: 15px;
+    margin: 5px 15px 0px 0px;
+    width: 3px;
+    height: 291px;
+    background-color: white;
+}
+
+.Footer img {
+    height: 60%;
+    width: auto;
+    margin: auto 40px auto 0px;
+}
+
+.HooftPagina{
+    display: flex;
+    flex-direction: column;
+}
+
+.HooftPagina article {
+    margin: 80px auto;
+    display: flex;
+    width: 60vw;
+}
+
+.HooftPagina img {
+    height: 18vw;
+    width: auto;
+    margin: 10px;
+}
+
+.HooftPagina-Title img {
+    position: absolute;
+    width: 120vw;
+    height: auto;
+    left: 0;
+    top: 0;
+    margin: 0px;
+    z-index: -1;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.HooftPagina-Title div {
+    margin: 20% 0% 30% 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+}
+
+.BezoekersInformatie{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.BezoekersInformatie article{
+    margin: 10px;
+}
+
+.BezoekersInformatie .OpeningsTijden{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+}
+
+.BezoekersInformatie .OpeningsTijden article {
+    width: 20%;
+}
+
+.BezoekersInformatie li {
+    list-style: none;
+}
+
+.BezoekersInformatie .Routebeschrijving{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.BezoekersInformatie .Routebeschrijving article,
+.BezoekersInformatie .Routebeschrijving iframe {
+    width: 500px;
+    height: 500px;
+    margin: 10px 40px;
+}
+
+.BezoekersInformatie > article{
+    width: 70vw;
+    margin: 40px auto;
+}
+
+.Contact{
+    width: 100vw;
+}
+
+.Contact div {
+    width: 70%;
+    margin: 30px auto;
+}
+
+.Contact ul{
+    list-style: none;
+}
+
+.Events .info{
+    display: flex;
+    width: 100%;
+}
+
+.Events .info div{
+    width: 90%;
+    margin: auto 40px;
+}
+
+details {
+    width: 60vw;
+}
+
+.Faq > h1 {
+    width: 100%;
+    margin: 3vw;
+    margin-left: 4vw;
+}
+
+details > summary {
+    padding: 1vw;
+    width: 40vw;
+    background-color: #2f2f2f;
+    border: none;
+    box-shadow: 3px 3px 4px black;
+    cursor: pointer;
+    list-style: none;
+}
+
+details > p {
+    background-color: gray;
+    width: 40vw;
+    padding: 1vw;
+    border: none;
+    box-shadow: 3px 3px 4px black;
+    background-color: #3f3f3f;
+}
+
+.Info {
+    margin-left: 1vw;
+}
+
+.EducationAndWorkshops {
+    display: flex;
+    flex-direction: column;
+}
+
+.WhatIsLive {
+    width: 70vw;
+    margin: auto;
+}
+
+    .WhatIsLive img {
+        width: 700px;
+        height: auto;
+    }
+
+    .WhatIsLive figure {
+        margin: 40px 0px;
+    }
+
+    .WhatIsLive figcaption {
+        font-size: 110%;
+        font-style: italic;
+    }
+
+.reviews {
+    width: 70vw;
+    margin: 40px auto;
+}
+
+.Review {
+    margin: 40px 0px;
+    background-color: #2f2f2f;
+    padding: 10px;
+}
+
+    .Review h2 {
+        padding-bottom: 4px;
+    }

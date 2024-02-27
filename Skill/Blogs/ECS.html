@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="styles.css" rel="stylesheet" />
+    <title>ecs blog</title>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li class="active"><a href="./ECS.html">Ecs</a></li>
+                <li><a href="./PerlinNois.html">Perlin noise</a></li>
+                <li><a href="./PolyCollision.html">Poly collision</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Unleashing the Power of Game Development with Entity-Component Systems</h1>
+            <figure>
+                <img src="./assets/ecs.jpg" alt="een image die laat zien hoe een ecs er uit ziet" />
+                <figcaption>dit is de structure van een entity component system. <a href="#" target="_blank">bron 👇</a> </figcaption>
+            </figure>
+            <p>
+                In the ever-evolving landscape of game development, engineers and designers are constantly seeking innovative ways to streamline the development process, enhance performance, and create flexible architectures.
+                One paradigm that has gained prominence in recent years is the Entity-Component System (ECS).
+                This architectural pattern has proven to be a game-changer, offering a fresh approach to organizing and managing game entities.
+                In this blog post, we'll delve into the world of Entity-Component Systems, exploring their principles, advantages, and practical applications in the realm of game development.
+            </p>
+
+            <h2>Understanding the Basics:</h2>
+            <p>
+                At its core, an Entity-Component System is a design pattern that decouples entities from their behaviors and attributes, providing a modular and extensible framework for game development.
+                Unlike traditional object-oriented approaches, where game entities are often represented as monolithic objects, ECS breaks down the entity into three distinct components: Entities, Components, and Systems.
+            </p>
+
+            <ol>
+                <li>
+                    Entities: Entities are the fundamental building blocks of the game world. They are essentially containers that hold components. In ECS, an entity is a simple identifier, devoid of any behavior or attributes.
+                </li>
+                <li>
+                    Components: Components encapsulate specific features or behaviors of an entity. For example, a "Position" component might contain information about the entity's location in the game world, while a "Render" component could define its visual appearance.
+                    Components are designed to be modular and reusable, allowing for a high degree of flexibility.
+                </li>
+                <li>
+                    Systems: Systems are responsible for processing and updating components. Each system operates on a specific aspect of the game logic, such as rendering, physics, or AI.
+                    Systems iterate over relevant components and apply the necessary operations, promoting a clean and efficient separation of concerns.
+                </li>
+            </ol>
+
+            <h2>Advantages of Entity-Component Systems:</h2>
+            <ol>
+                <li>
+                    Modularity and Reusability: ECS encourages a modular design, making it easy to add, remove, or modify features without affecting other parts of the codebase.
+                    Components can be reused across different entities, promoting code efficiency.
+                </li>
+                <li>
+                    Performance Optimization: The data-oriented nature of ECS facilitates better cache utilization and parallel processing.
+                    Systems operate on contiguous blocks of memory containing relevant components, improving performance by reducing cache misses and enabling parallelization.
+                </li>
+                <li>
+                    Flexibility and Extensibility: Game development is an iterative process, and ECS excels in accommodating changes.
+                    New components and systems can be added without disrupting existing code, making it easier to adapt to evolving project requirements.
+                </li>
+                <li>
+                    Debugging and Maintenance: With a clear separation of concerns, debugging becomes more straightforward.
+                    Identifying and fixing issues within specific components or systems is simplified, leading to a more maintainable codebase
+                </li>
+            </ol>
+
+            <h2>Practical Applications:</h2>
+            <ol>
+                <li>
+                    Game Development: ECS is widely used in the development of video games, ranging from indie projects to AAA titles.
+                    Its flexibility allows game developers to efficiently manage complex entities and systems, contributing to the creation of immersive and dynamic gaming experiences.
+                </li>
+                <li>
+                    Simulation and Virtual Reality: ECS is also applicable beyond traditional game development.
+                    In simulation environments and virtual reality applications, where complex interactions and behaviors need to be modeled, ECS provides a scalable and efficient solution.
+                </li>
+                <li>
+                    Animation Systems: Managing the complex relationships between characters and objects in animations can be challenging.
+                    ECS offers a structured approach to handling animation components and systems, facilitating the creation of realistic and interactive animations.
+                </li>
+            </ol>
+
+            <h2>Conclusion:</h2>
+            <p>
+                Entity-Component Systems have emerged as a powerful and versatile architectural pattern in the world of game development and beyond.
+                By promoting modularity, performance optimization, and flexibility, ECS enables developers to tackle complex projects with greater efficiency and ease.
+                As the gaming industry continues to evolve, embracing innovative patterns like ECS will play a pivotal role in shaping the future of interactive experiences.
+                Whether you're a seasoned game developer or someone exploring the possibilities of ECS for the first time, the benefits it brings to the table make it a compelling paradigm worth considering for your next project.
+            </p>
+            <a class="top" href="#header">Top</a>
+        </article>
+    </main>
+    <footer>
+        <p>gemaakt door quinten duijster</p>
+    </footer>
+</body>
+</html>

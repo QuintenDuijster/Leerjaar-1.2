@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Georgia;
+    font-size: 20px;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    background-color: #2f2f2f;
+    padding: 5px;
+}
+
+h1 { 
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 150%;
+
+}
+
+h3 {
+    font-size: 125%;
+}
+
+p, h1, h2, h3{
+    color: white;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #2f2f2f;
+    position: relative;
+}
+
+    header #myLinks {
+        display: none;
+    }
+
+    header a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+        header a.icon {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0
+        }
+
+            header a.icon img {
+                height: 25px;
+                width: auto;
+            }
+
+        header a:hover {
+            background-color: #4f4f4f;
+        }
+
+.active {
+    background-color: #2f2f2f;
+    color: white;
+}
+
+h1{
+    margin: auto;
+    width: 90vw;
+}
+
+body{
+    background-color: #1f1f1f;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    main > img {
+        object-fit: cover;
+        width: 100%;
+        height: calc(100vh - 52.4px);
+    }
+
+    main h1,
+    main div {
+        margin: 40px auto;
+    }
+
+main div {
+    display: flex;
+    width: 90vw;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main div figure {
+    flex-basis: calc(33% - 10px);
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+main div img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.text article {
+    flex-basis: calc(33% - 10px);
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+

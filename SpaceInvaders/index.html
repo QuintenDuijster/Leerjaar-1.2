@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="Calculate.js" defer></script>
+    <script src="input.js" defer></script>
+    <script src="game.js" defer ></script>
+    <script src="script.js" defer></script>
+    <!--<script src="test.js" defer></script>-->
+    <title>Space invaders</title>
+</head>
+<body>
+    <div class="game">
+        <canvas style="border: 2px solid black" height="800" width="1200" id="gameCanvas">This is my canvas</canvas>
+    </div>
+
+    <div class="won">
+        <h1>You won nice :)</h1>
+        <button onclick="switchMenu('won', 'game'); startGame();">try again</button>
+        <button onclick="switchMenu('won', 'mainMenu')">mainmenu</button>
+    </div>
+
+    <div class="lost">
+        <h1>You lost :(</h1>
+        <button onclick="switchMenu('lost', 'game'); startGame();">try again</button>
+        <button onclick="switchMenu('lost', 'mainMenu')">mainmenu</button>
+    </div>
+
+
+    <div class="mainMenu">
+        <h1>Space invaders</h1>
+        <button onclick="switchMenu('mainMenu', 'game'); startGame();"> Start </button>
+        <button onclick="switchMenu('mainMenu', 'settingMenu')"> Settings </button>
+
+        <!--<button onclick="'test.start()'"> Start </button>
+    <button onclick="'test.stop()'"> stop </button>-->
+    </div>
+
+    <div class="settingMenu">
+        <h1>Settings</h1>
+        <table>
+            <tr>
+                <th>Action</th>
+                <th>First key</th>
+                <th>Second key</th>
+            </tr>
+            <tr>
+                <td>Move left: </td>
+                <td><button class="firstLeft" onclick="inputs.requestChangeInput('firstLeft')">a</button></td>
+                <td><button class="secondLeft" onclick="inputs.requestChangeInput('secondLeft')">LeftArrow</button></td>
+            </tr>
+            <tr>
+                <td>Move rigth: </td>
+                <td><button class="firstRight" onclick="inputs.requestChangeInput('firstRight')">d</button></td>
+                <td><button class="secondRight" onclick="inputs.requestChangeInput('secondRight')">RightArrow</button></td>
+            </tr>
+            <tr>
+                <td>Shoot: </td>
+                <td><button class="firstShoot" onclick="inputs.requestChangeInput('firstShoot')">m</button></td>
+                <td><button class="secondShoot" onclick="inputs.requestChangeInput('secondShoot')">Left mouse</button></td>
+            </tr>
+        </table>
+        <button onclick="switchMenu('settingMenu', 'mainMenu')"> return </button>
+    </div>
+
+    <!-- loads images for the game -->
+    <img src="assets/background.png" class="backgroundImg" style="display: none;" />
+    <img src="./assets/player.png" class="playerImg" style="display: none;" />
+    <img src="./assets/enemy.png" class="enemyImg" style="display: none;" />
+    <img src="./assets/bullet.png" class="bulletImg" style="display: none;" />
+    <img src="./assets/bomb.png" class="bombImg" style="display: none;" />
+</body>
+</html>
+
